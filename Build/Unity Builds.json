@@ -1,9 +1,9 @@
 {
 "companyName": "DefaultCompany",
-"productName": "LDJam43",
-"dataUrl": "Desktop.data.unityweb",
-"wasmCodeUrl": "Desktop.wasm.code.unityweb",
-"wasmFrameworkUrl": "Desktop.wasm.framework.unityweb",
+"productName": "Impact",
+"dataUrl": "Unity Builds.data.unityweb",
+"wasmCodeUrl": "Unity Builds.wasm.code.unityweb",
+"wasmFrameworkUrl": "Unity Builds.wasm.framework.unityweb",
 "TOTAL_MEMORY": 268435456,
 "graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
 "webglContextAttributes": {"preserveDrawingBuffer": false},
