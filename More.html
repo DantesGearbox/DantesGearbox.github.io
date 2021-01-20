@@ -18,10 +18,69 @@
     
     
      <script async defer data-domain="madsengberg.com" src="https://plausible.io/js/plausible.js"></script>
-    
+	
      <script>
-		 function changeTo(element, src){
-			 element.setAttribute('src', src);
+		 function changeTo(element){
+			 
+			var ozzyEle = document.getElementById("ozzyimg");
+			if(element == ozzyEle){
+				console.log("Ozzy mouseover");
+				if(ozzyEle.getAttribute('src') == "images/ozzy.gif"){
+					console.log("Already set");
+					return;
+				}
+				ozzyEle.setAttribute('src', "images/ozzy.gif");
+			} else {
+				ozzyEle.setAttribute('src', "images/Capture82.PNG");
+			}
+			
+			var pixEle = document.getElementById("piximakeyimg");
+			if(element == pixEle){
+				console.log("Pix mouseover");
+				if(pixEle.getAttribute('src') == "images/Piximakey.gif"){
+					console.log("Already set");
+					return;
+				}
+				pixEle.setAttribute('src', "images/Piximakey.gif");
+			} else {
+				pixEle.setAttribute('src', "images/unnamed.png");
+			}
+			
+			var jamEle = document.getElementById("jamimg");
+			if(element == jamEle){
+				console.log("Jam mouseover");
+				if(jamEle.getAttribute('src') == "images/JameGames.gif"){
+					console.log("Already set");
+					return;
+				}
+				jamEle.setAttribute('src', "images/JameGames.gif");
+			} else {
+				jamEle.setAttribute('src', "images/index7.png");
+			}
+			
+			var thesisEle = document.getElementById("thesisimg");
+			if(element == thesisEle){
+				console.log("Thesis mouseover");
+				if(thesisEle.getAttribute('src') == "images/thesis.gif"){
+					console.log("Already set");
+					return;
+				}
+				thesisEle.setAttribute('src', "images/thesis.gif");
+			} else {
+				thesisEle.setAttribute('src', "images/thesis2.PNG");
+			}
+			
+			var voxelEle = document.getElementById("voxelimg");
+			if(element == voxelEle){
+				console.log("Voxel mouseover");
+				if(voxelEle.getAttribute('src') == "images/minecraft.gif"){
+					console.log("Already set");
+					return;
+				}
+				voxelEle.setAttribute('src', "images/minecraft.gif");
+			} else {
+				voxelEle.setAttribute('src', "images/1.png");
+			}
 		 }
      </script>
     
@@ -84,12 +143,12 @@
           </div>
         </nav>
       </div></header>
-    <section class="u-align-center u-clearfix u-section-1" id="sec-c1ff">
+    <section class="u-align-center u-clearfix u-section-1" id="sec-c1ff" onmouseover="changeTo(aiimg)">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <h2 class="u-align-center u-text u-text-1">Here are some other games and projects I've worked on.</h2>
       </div>
     </section>
-    <section class="u-clearfix u-section-2" id="ozzy">
+    <section class="u-clearfix u-section-2" id="ozzy" onmouseover="changeTo(ozzyimg)">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-spacing-vertical u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
@@ -98,7 +157,7 @@
                 <div class="u-layout-row">
                   <div class="u-container-style u-expand-resize u-layout-cell u-left-cell u-size-60 u-layout-cell-1" src="">
                     <div class="u-container-layout u-valign-top u-container-layout-1">
-                      <img class="u-expanded-width u-image u-image-1" data-image-width="1534" data-image-height="861" onmouseover="changeTo(this, 'images/ozzy.gif')" onmouseout="changeTo(this, 'images/Capture82.PNG')" src="images/Capture82.PNG">
+                      <img id="ozzyimg" class="u-expanded-width u-image u-image-1" data-image-width="1534" data-image-height="861" src="images/Capture82.PNG">
                     </div>
                   </div>
                 </div>
@@ -138,7 +197,7 @@
         </div>
       </div>
     </section>
-    <section class="u-clearfix u-section-3" id="piximakey">
+    <section class="u-clearfix u-section-3" id="piximakey" onmouseover="changeTo(piximakeyimg)">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-spacing-vertical u-layout-wrap u-layout-wrap-1">
           <div class="u-layout" style="">
@@ -147,7 +206,7 @@
                 <div class="u-layout-row">
                   <div class="u-container-style u-expand-resize u-layout-cell u-left-cell u-size-60 u-layout-cell-1" src="">
                     <div class="u-container-layout u-valign-top u-container-layout-1">
-                      <img class="u-expanded-width u-image u-image-contain u-image-1" data-image-width="1024" data-image-height="500" onmouseover="changeTo(this, 'images/Piximakey.gif')" onmouseout="changeTo(this, 'images/unnamed.png')" src="images/unnamed.png">
+                      <img id="piximakeyimg" class="u-expanded-width u-image u-image-contain u-image-1" data-image-width="1024" data-image-height="500" src="images/unnamed.png">
                     </div>
                   </div>
                 </div>
@@ -186,7 +245,7 @@
         </div>
       </div>
     </section>
-    <section class="u-clearfix u-section-4" id="jamgames">
+    <section class="u-clearfix u-section-4" id="jamgames" onmouseover="changeTo(jamimg)">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-spacing-vertical u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
@@ -195,7 +254,7 @@
                 <div class="u-layout-row">
                   <div class="u-container-style u-expand-resize u-layout-cell u-left-cell u-size-60 u-layout-cell-1" src="">
                     <div class="u-container-layout u-valign-top u-container-layout-1">
-                      <img class="u-expanded-width u-image u-image-contain u-image-1" data-image-width="1024" data-image-height="769" onmouseover="changeTo(this, 'images/JameGames.gif')" onmouseout="changeTo(this, 'images/index7.png')" src="images/index7.png">
+                      <img id="jamimg" class="u-expanded-width u-image u-image-contain u-image-1" data-image-width="1024" data-image-height="769" src="images/index7.png">
                     </div>
                   </div>
                 </div>
@@ -236,7 +295,7 @@
         </div>
       </div>
     </section>
-    <section class="u-clearfix u-section-5" id="thesis">
+    <section class="u-clearfix u-section-5" id="thesis" onmouseover="changeTo(thesisimg)">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-spacing-vertical u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
@@ -245,7 +304,7 @@
                 <div class="u-layout-row">
                   <div class="u-container-style u-expand-resize u-layout-cell u-left-cell u-size-60 u-layout-cell-1" src="">
                     <div class="u-container-layout u-valign-top u-container-layout-1">
-                      <img class="u-expanded-width u-image u-image-contain u-image-1" data-image-width="1024" data-image-height="531" onmouseover="changeTo(this, 'images/thesis.gif')" onmouseout="changeTo(this, 'images/thesis2.PNG')" src="images/thesis2.PNG">
+                      <img id="thesisimg" class="u-expanded-width u-image u-image-contain u-image-1" data-image-width="1024" data-image-height="531" src="images/thesis2.PNG">
                     </div>
                   </div>
                 </div>
@@ -284,7 +343,7 @@
         </div>
       </div>
     </section>
-    <section class="u-clearfix u-section-6" id="voxelengine">
+    <section class="u-clearfix u-section-6" id="voxelengine" onmouseover="changeTo(voxelimg)">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-spacing-vertical u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
@@ -293,7 +352,7 @@
                 <div class="u-layout-row">
                   <div class="u-container-style u-expand-resize u-layout-cell u-left-cell u-size-60 u-layout-cell-1" src="">
                     <div class="u-container-layout u-valign-top u-container-layout-1">
-                      <img class="u-expanded-width u-image u-image-1" onmouseover="changeTo(this, 'images/minecraft.gif')" onmouseout="changeTo(this, 'images/1.png')" src="images/1.png">
+                      <img id="voxelimg" class="u-expanded-width u-image u-image-1" src="images/1.png">
                     </div>
                   </div>
                 </div>
@@ -333,7 +392,7 @@
         </div>
       </div>
     </section>
-    <section class="u-clearfix u-section-7" id="sscait">
+    <section class="u-clearfix u-section-7" id="sscait" onmouseover="changeTo(aiimg)">
       <div class="u-clearfix u-sheet u-valign-bottom u-sheet-1">
         <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-spacing-vertical u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
@@ -342,7 +401,7 @@
                 <div class="u-layout-row">
                   <div class="u-container-style u-expand-resize u-layout-cell u-left-cell u-size-60 u-layout-cell-1" src="">
                     <div class="u-container-layout u-valign-top u-container-layout-1">
-                      <img class="u-expanded-width u-image u-image-1" data-image-width="1280" data-image-height="720" src="images/tvp.png">
+                      <img id="aiimg" class="u-expanded-width u-image u-image-1" data-image-width="1280" data-image-height="720" src="images/tvp.png">
                     </div>
                   </div>
                 </div>
