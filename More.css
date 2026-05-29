@@ -1443,8 +1443,8 @@
 
 /* Uniform spacing between project entries on the More page */
 .more-entry .u-layout-wrap-1 {
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .more-entry .u-sheet-1 {
@@ -1459,6 +1459,15 @@
   display: block;
 }
 
+.more-entry img.more-hover-gif {
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
 .more-entry .u-layout-cell-1 {
+  min-height: 0 !important;
+}
+
+.more-entry .u-layout-cell-3 {
   min-height: 0 !important;
 }
