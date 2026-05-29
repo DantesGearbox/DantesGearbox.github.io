@@ -1440,3 +1440,25 @@
     height: 347px;
   }
 }
+
+/* Uniform spacing between project entries on the More page */
+.more-entry .u-layout-wrap-1 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.more-entry .u-sheet-1 {
+  min-height: 0;
+}
+
+.more-entry .u-image-1 {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  height: auto !important;
+  object-fit: cover;
+  display: block;
+}
+
+.more-entry .u-layout-cell-1 {
+  min-height: 0 !important;
+}
